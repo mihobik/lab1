@@ -20,7 +20,7 @@ int main() {
         cout << "Enter lengths of the non-parallel sides (c d): ";
         cin >> c >> d;
         if (c <= 0 || d <= 0 || c < h || d < h) {
-            cout << "Lengths of non-parallel sides must be positive numbers or side lengths are greater than height. Please try again." << endl;
+            cout << "Lengths of non-parallel sides must be positive numbers or side lengths are less than height. Please try again." << endl;
         }
     } while (c <= 0 || d <= 0 || c < h || d < h);
 
