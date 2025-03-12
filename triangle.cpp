@@ -10,6 +10,12 @@ int main() {
     cout << "Enter sides of the triangle (a b c): ";
     cin >> a >> b >> c;
 
+    // Проверяем ввод на отрицательные значения
+    if (a <= 0 || b <= 0 || c <= 0) {
+        cout << "incorrect value" << endl;
+        return 1;
+    }
+
     // Проверяем существование треугольника
     if (a + b > c && a + c > b && b + c > a) {
         // Периметр
@@ -35,3 +41,4 @@ int main() {
 
     return 0;
 }
+//комментарий1
