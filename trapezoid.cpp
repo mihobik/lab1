@@ -6,21 +6,21 @@ using namespace std;
 int main() {
     double a, b, h;
 
-    // Запрашиваем длины оснований и высоту трапеции
+    // Р—Р°РїСЂР°С€РёРІР°РµРј РґР»РёРЅС‹ РѕСЃРЅРѕРІР°РЅРёР№ Рё РІС‹СЃРѕС‚Сѓ С‚СЂР°РїРµС†РёРё
     cout << "Enter lengths of the bases of the trapezoid (a b) and height (h): ";
     cin >> a >> b >> h;
 
-    // Проверка на положительность оснований и высоты
+    // РџСЂРѕРІРµСЂРєР° РЅР° РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕСЃС‚СЊ РѕСЃРЅРѕРІР°РЅРёР№ Рё РІС‹СЃРѕС‚С‹
     if (a > 0 && b > 0 && h > 0) {
-        // Периметр
+        // РџРµСЂРёРјРµС‚СЂ
         double perimeter = a + b + 2 * sqrt(h * h + pow((b - a) / 2, 2));
         cout << "Perimeter: " << perimeter << endl;
 
-        // Площадь
+        // РџР»РѕС‰Р°РґСЊ
         double area = ((a + b) / 2) * h;
         cout << "Area: " << area << endl;
 
-        // Длина средней линии
+        // Р”Р»РёРЅР° СЃСЂРµРґРЅРµР№ Р»РёРЅРёРё
         double midline = (a + b) / 2;
         cout << "Length of the midline: " << midline << endl;
     }
