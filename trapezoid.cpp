@@ -20,7 +20,7 @@ int main() {
         cout << "Enter lengths of the non-parallel sides (c d): ";
         cin >> c >> d;
         if (c <= 0 || d <= 0 || c < h || d < h) {
-            cout << "Lengths of non-parallel sides must be positive numbers. Please try again." << endl;
+            cout << "Lengths of non-parallel sides must be positive numbers and is greater than the length of the height of the trapezoid. Please try again." << endl;
         }
     } while (c <= 0 || d <= 0 || c < h || d < h);
 
