@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -11,6 +11,12 @@ int main() {
     cin >> R;
     cout << "Enter the angle (in degrees): ";
     cin >> angle;
+
+    // Проверяем ввод на отрицательные значения
+    if (R < 0 || angle < 0) {
+        cout << "неверное значение" << endl;
+        return 1; // Завершаем программу с кодом ошибки
+    }
 
     // Вычисления: длина окружности, площадь круга, площадь кругового сектора
     double circumference = 2 * PI * R;
